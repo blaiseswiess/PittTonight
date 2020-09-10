@@ -1,0 +1,192 @@
+<!-- HOME SCREEN
+        Basic Overview
+                - This is the HTML file for the home screen
+                - The skeleton is here and stylistic things in the CSS file
+                - This code has coments that will clearly explain what the code is doing and how to edit
+                - If you have any questions you can refer to - https://www.w3schools.com/html/default.asp or google
+                - The internet is a GREAT resource for coding questions and I highly encourage you use it
+                - When you do edits you need to change the comments to reflect your edits so your code maintains its readablility
+           Syntax
+                - Tabs do not matter in HTML. I have things tabbed so they are more readable but no other purpose
+                 - <h1></h1> are the tags that declair the first headder. You put what you want to be written, between the 2 tags
+-->
+<!DOCTYPE html>
+<html>
+        <!--WEB PAGE TITLE IN BROWSER TAB
+           This head section is how we make the wabpage name show on your browser’s tab
+          To Edit : only change the actual title(what is between the title tags), nothing else
+          <title>WORDS TO EDIT</title>
+          -->
+          <head>
+            <title>Pitt Tonight Home</title>
+            <link rel="stylesheet" href="Pitt Tonight/CSS files/PittTonightHome.css">
+            <link href = "Pitt Tonight/CSS files/glider.min.css" rel = "stylesheet" type = "text/css">
+            <link rel = "stylesheet" href ="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" type="text/css" href="Pitt Tonight/CSS files/Newseletter.css">
+          </head>
+
+<!--BODY CONTAINS EVERYTHING THAT IS PRINTED ON THE WEBPAGE -->
+    <header>
+          <!--WEB PAGE TITLE (BIGGEST THING ON TOP OF SCREEN)
+           To Edit : only change what is between the h1 tags, nothing else
+           <h1>WORDS TO EDIT</h1>
+           -->
+           
+            <span class="banner_h">
+                <img class = banner_img src="Pitt Tonight/Backgrounds/PTbackground1.JPG" alt="Banner" height 150px width = 100% />
+            </span>
+          <!--Web Page Tabs - for example (home, recruitment, photos)
+           - First 3 lines for <h2> enable dropdowns to be used.
+          - To Edit:
+          - Dropdown name:
+          <button class="dropbtn">WORDS TO EDIT</button>
+          - Dropdown Links: the file you would like to link to, clicking it will take you to that specific page
+          <a href="NAME OF FILE">NAME DISPLAYED ON SCREEN</a>
+           -->
+
+
+
+            <!-- GLIDER -->
+            <title> GliderShow </title>
+            <div class = "glider-contain multiple">
+              <button class = "glider-prev">
+                <i class = "fa fa-chevron-left"></i>
+              </button>
+              <button class = "glider-next">
+                <i class = "fa fa-chevron-right"></i>
+              </button>
+              <div class ="glider">
+                <figure>
+                  <img class = "slider-image" src ="Pitt Tonight/Glider Pictures/image1.JPG">
+
+                </figure>
+                <figure>
+                  <img class = "slider-image" src ="Pitt Tonight/Glider Pictures/image2.JPG">
+              </figure>
+              <figure>
+                 <img class = "slider-image" src ="Pitt Tonight/Glider Pictures/image3.JPG">
+              </figure>
+              <figure>
+                   <img class = "slider-image" src ="Pitt Tonight/Glider Pictures/image4.JPG">
+             </figure>
+             <figure>
+                   <img class = "slider-image" src ="Pitt Tonight/Glider Pictures/image5.JPG">
+                </figure>
+              <figure>
+                  <img class = "slider-image" src ="Pitt Tonight/Glider Pictures/image6.JPG">
+             </figure>
+             <figure>
+                  <img class = "slider-image" src ="Pitt Tonight/Glider Pictures/image7.JPG">
+            </figure>
+            <figure>
+                  <img class = "slider-image" src ="Pitt Tonight/Glider Pictures/image8.JPG">
+            </figure>
+            <figure>
+                  <img class = "slider-image" src ="Pitt Tonight/Glider Pictures/image9.JPG">
+          </figure>
+              </div>
+              <div id = "dots" class = "glider-dots"></div>
+          </div>
+          <script src = "Pitt Tonight/glider.min.js"></script>
+          <script>
+              new Glider(document.querySelector('.glider'),{
+                slidesToScroll:1,
+                slidesToShow: 3,
+                draggable: true,
+                dots: '#dots',
+                arrows: {
+                   prev: '.glider-prev',
+                  next: '.glider-next',
+                }
+
+              })
+            </script>
+
+
+            <!-- HEADER -->
+           <div class = "fixed-header">
+             <div class = "container">
+ 
+               <h2> 
+
+                  <!-- first drop down -->
+                  <div class="dropdown">
+                    <button class="dropbtn">About</button>
+                    <div class="dropdown-content">
+                            <a href="NAME OF FILE">NAME DISPLAYED ON SCREEN</a>
+                            <a href="#">Link 2</a> 
+                            <a href="#">Link 3</a> 
+                     </div>
+                    </div>
+                    <!-- second drop down -->
+                   <div class="dropdown">
+                    <button class="dropbtn">Episodes</button>
+                      <div class="dropdown-content">
+                        <a href="NAME OF FILE">NAME DISPLAYED ON SCREEN</a> 
+                        <a href="#">Link 2</a> 
+                        <a href="#">Link 3</a>
+                          </div>
+                       </div>  
+                    <!-- third drop down-->
+                    <div class="dropdown">
+                      <button class="dropbtn">Application</button>
+                        <div class="dropdown-content">
+                          <a href="NAME OF FILE">NAME DISPLAYED ON SCREEN</a> 
+                          <a href="#">Link 2</a> 
+                          <a href="#">Link 3</a>
+                            </div>
+                         </div>  
+                    <!-- fourth drop down-->
+                     <div class="dropdown">
+                       <button class="dropbtn">Exec / Chairs</button>
+                          <div class="dropdown-content">
+                            <a href="Exec.html">Exec Members</a> 
+                            <a href="Pitt Tonight/HTML files/Chair.html">Chair Position</a> 
+                            <a href="#">Application</a>
+                                </div>
+                             </div>  
+                     <!-- LOGO-->
+                     <img class ="logo" src = "Pitt Tonight/Logos/PTlogo.jpg" alt = "Pitt Tonight" > 
+                
+                     <!-- KEEP IN TOUCH DROP DOWN-->
+                  <div class = "dropdown">
+                    <button class = "dropbtn">Keep in Touch </button>
+                    <div class = "dropdown-content"> 
+                      <figures> 
+                        <a href = "https://www.instagram.com/trisigmapitt/?hl=en">
+                          <i class="fa fa-instagram" aria-hidden="true"></i>   </a> 
+                          <a href = "https://twitter.com/trisigmapitt?lang=en">
+                            <i class="fa fa-twitter" aria-hidden="true"></i> </a >
+                          <a href = "https://vsco.co/trisigmapitt/gallery "> 
+                           <img class ="vsco" src ="Tri Sigma Website/Logos/vscoIcon2.jpg" alt ="vsco"></a>
+                          <a href = "https://www.youtube.com/watch?v=GD3iAb-3LNo">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i> </a>
+                      </figures>
+                    </div>
+                  </div>
+                     </h2>
+                  <!-- SEARCH BAR -->
+
+                  <div class="search-box">
+                       <input class ="search-txt"name = "" placeholder="Search.."> 
+                       <a class = "search-btn" href = "#">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+
+             </div>
+           </div>
+           
+            </header> 
+
+            <!-- FOOTER -->
+            <div class = "fixed-footer">
+              <div class ="block"> Made by the 2020 Pitt Tonigth Staff
+              </div>
+            </div>
+
+
+</body>
+</html>
+

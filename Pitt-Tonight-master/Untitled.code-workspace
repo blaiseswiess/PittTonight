@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Downloads/fontawesome-free-5.14.0-web"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Samy-and-Sophie"
+	}
+}
